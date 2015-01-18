@@ -4,17 +4,17 @@
 ###1. Introduction:
 It aims to find loops in a test network, using static data plane verification. In this process, the networks flow table dumps are analyzed in order to create forwarding graphs. This is shown in the figure below[1].
 
-![Forwarding graph construction](https://github.gatech.edu/SDN-Lab/LoopDetection/raw/master/Process.png "Forwarding graph construction")
+![Forwarding graph construction](https://github.com/priyankaganesan/Loop-Detection-in-SDNs/blob/master/Process.png "Forwarding graph construction")
 
 
 These graphs are partitioned based on the destination IP prefix, as seen[1].
 
-![alt text](https://github.gatech.edu/SDN-Lab/LoopDetection/raw/master/Partitioning%20based%20on%20IP.png "Partitioning based on IP")
+![alt text](https://github.com/priyankaganesan/Loop-Detection-in-SDNs/blob/master/Partitioning%20based%20on%20IP.png "Partitioning based on IP")
 
 
 The partitioned graphs are processed using Tarjan's algorithm for strongly connected components, in order to detect loops[1].
 
-![alt text](https://github.gatech.edu/SDN-Lab/LoopDetection/raw/master/Screen%20Shot%202014-12-10%20at%2012.00.57%20PM.png "Forwarding graphs with and without loops")
+![alt text](https://github.com/priyankaganesan/Loop-Detection-in-SDNs/blob/master/Screen%20Shot%202014-12-10%20at%2012.00.57%20PM.png "Forwarding graphs with and without loops")
 
 
 ---
