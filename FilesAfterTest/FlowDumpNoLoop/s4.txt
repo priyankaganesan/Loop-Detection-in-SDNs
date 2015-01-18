@@ -1,0 +1,12 @@
+NXST_FLOW reply (xid=0x4):
+ cookie=0x0, duration=84.165s, table=0, n_packets=0, n_bytes=0, idle_age=84, priority=59991,vlan_tci=0x0000 actions=drop
+ cookie=0x0, duration=84.165s, table=0, n_packets=0, n_bytes=0, idle_age=84, priority=59998,ip,vlan_tci=0x0000,nw_dst=10.0.0.1 actions=output:1
+ cookie=0x0, duration=84.165s, table=0, n_packets=0, n_bytes=0, idle_age=84, priority=59996,arp,vlan_tci=0x0000,arp_tpa=10.0.0.1 actions=output:1
+ cookie=0x0, duration=84.165s, table=0, n_packets=0, n_bytes=0, idle_age=84, priority=59994,ip,vlan_tci=0x0000,nw_dst=10.0.0.2 actions=output:2
+ cookie=0x0, duration=84.165s, table=0, n_packets=0, n_bytes=0, idle_age=84, priority=59992,arp,vlan_tci=0x0000,arp_tpa=10.0.0.2 actions=output:2
+ cookie=0x0, duration=84.165s, table=0, n_packets=0, n_bytes=0, idle_age=84, priority=0 actions=CONTROLLER:65535
+ cookie=0x0, duration=84.165s, table=0, n_packets=0, n_bytes=0, idle_age=84, priority=59999,ip,in_port=1,vlan_tci=0x0000,nw_dst=10.0.0.1 actions=IN_PORT
+ cookie=0x0, duration=84.165s, table=0, n_packets=0, n_bytes=0, idle_age=84, priority=59995,ip,in_port=2,vlan_tci=0x0000,nw_dst=10.0.0.2 actions=IN_PORT
+ cookie=0x0, duration=84.165s, table=0, n_packets=0, n_bytes=0, idle_age=84, priority=59993,arp,in_port=2,vlan_tci=0x0000,arp_tpa=10.0.0.2 actions=IN_PORT
+ cookie=0x0, duration=84.165s, table=0, n_packets=0, n_bytes=0, idle_age=84, priority=59997,arp,in_port=1,vlan_tci=0x0000,arp_tpa=10.0.0.1 actions=IN_PORT
+ cookie=0x0, duration=84.165s, table=0, n_packets=0, n_bytes=0, idle_age=84, priority=60000,vlan_tci=0x0000,dl_type=0x88cc actions=CONTROLLER:65535
